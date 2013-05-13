@@ -45,6 +45,13 @@ BOARD_KERNEL_CMDLINE        := console=ttyHSL0,115200,n8 androidboot.hardware=qc
 BOARD_KERNEL_BASE           := 0x40200000
 BOARD_FORCE_RAMDISK_ADDRESS := 0x41500000
 BOARD_KERNEL_PAGESIZE       := 2048
+# Display
+TARGET_SCREEN_WIDTH := 480
+TARGET_SCREEN_HEIGHT := 800
+TARGET_USES_ION := true
+TARGET_USES_OVERLAY := false
+TARGET_QCOM_HDMI_OUT := false
+TARGET_QCOM_HDMI_RESOLUTION_AUTO := false
 
 # Define Prebuilt kernel locations
 TARGET_PREBUILT_KERNEL      := device/pantech/ef34k/prebuilt/kernel
